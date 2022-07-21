@@ -1,0 +1,8 @@
+# Custom gitignore created by Lea Thorwartl
+
+# reason was following warning aborting pushes
+# warning: Cannot merge binary files: doc/WriteModbusCCW/Modbus_ReadWriteCCW/Modbus_Read.v12.ccwsuo
+
+
+### CCW ###
+*.ccwsuo
