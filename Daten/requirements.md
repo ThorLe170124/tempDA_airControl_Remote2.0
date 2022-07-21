@@ -1,1 +1,0 @@
-Connected Components Workbench Developer Edition
