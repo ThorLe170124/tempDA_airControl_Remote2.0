@@ -1,0 +1,8 @@
+[BEGIN FB INPUTS]
+I1=micro830.micro830.prog1/msg_modbus_1.in,0x42D,BOOL
+I2=micro830.micro830.prog1/msg_modbus_1.cancel,0x42C,BOOL
+I3=micro830.micro830.prog1/msg_modbus_1.localcfg,0xFFFFFFFF,MODBUSLOCPARA
+I4=micro830.micro830.prog1/msg_modbus_1.targetcfg,0xFFFFFFFF,MODBUSTARPARA
+I5=micro830.micro830.prog1/msg_modbus_1.localaddr,0xFFFFFFFF,MODBUSLOCADDR
+I6=micro830.micro830.prog1/msg_modbus_1.__adi_localaddr,0xFFFFFFFF,UINT
+[END]

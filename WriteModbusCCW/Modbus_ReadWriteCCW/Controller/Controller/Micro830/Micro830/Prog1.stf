@@ -1,0 +1,10 @@
+PROGRAM Prog1
+(*MSG_MODBUS_1(IN:= Start,
+			Cancel:=Mdb_Cancle,
+			LocalCfg := Mdb_Local,
+			TargetCfg := Mdb_Target,
+			LocalAddr := Mdb_Addr);*)
+			
+			
+			
+END_PROGRAM

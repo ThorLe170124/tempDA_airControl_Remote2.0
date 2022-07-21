@@ -1,0 +1,12 @@
+PROGRAM Prog2
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIC  [1,0] (*_IO_EM_DI_00*) (*Taster1*)  OTE  [2,0] (*_IO_EM_DO_05*) (**)
+EOR [3,0]
+EOF
+#end_info
+END_PROGRAM

@@ -1,0 +1,22 @@
+PROGRAM Prog3
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  
+ BST  XIO  [1,0] (*MSG_MODBUS_1.Error*) (*Err*)
+   NXB  XIC  [1,1] (*TON_1.Q*) (*Q*)
+ BND
+  FB  [2,0] (*MSG_MODBUS*) (*MSG_MODBUS_1*) ( (*IN:IN*)(**) (**)  , (*Cancel:Canc*)(*Cancel*) (**)  , (*LocalCfg:Loca*)(*LocalCfg*) (**)  , (*TargetCfg:Targ*)(*TargetCfg*) (**)  , (*LocalAddr:Loca*)(*LocalAddr*) (**)  , (*__ADI_LocalAddr:_ADI*)(*0*) (**) ; (*Q:Q*)(**) (**)  , (*Error:Err*)(**) (**)  , (*ErrorID:ErID*)(**) (**) )
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,8] (**) (**)  XIO  [1,0] (*MSG_MODBUS_1.Error*) (*Err*)  FB  [2,0] (*TON*) (*TON_1*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*T#10s*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [5,0]
+EOF
+#end_info
+END_PROGRAM

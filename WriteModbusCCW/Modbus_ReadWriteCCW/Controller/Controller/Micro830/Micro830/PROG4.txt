@@ -1,0 +1,36 @@
+(****** QuickLD compiler *******************************)
+(****** Copyright Rockwell Automation Canada, Ltd ******)
+(****** ST *********************************************)
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,1
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+(* FB call: MSG_MODBUS *)
+MSG_MODBUS_1(START, CANCEL, LOCALCFG, TARGETCFG, LOCALADDR, 0) ;
+__EDTB1 := MSG_MODBUS_1.Q ;
+(* FB call: MSG_MODBUS *)
+MSG_MODBUS_2(START, CANCEL, LOCALCFG2, TARGETCFG2, LOCALADDR2, 0) ;
+__EDTB2 := MSG_MODBUS_2.Q ;
+(* FB call: MSG_MODBUS *)
+MSG_MODBUS_5(START, CANCEL, LOCALCFG3, TARGETCFG3, LOCALADDR3, 0) ;
+__EDTB3 := MSG_MODBUS_5.Q ;
+__EDTB4 := (__EDTB2 OR __EDTB3) ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0001 ;
+
+
+(*************** Code for the end of File **************)
+__GL __LG0000 ;
+
+
+
+(*************** Local Symbols table *******************)
+(* __EDTB1 *)
+(* __EDTB2 *)
+(* __EDTB3 *)
+(* __EDTB4 *)
+

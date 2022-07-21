@@ -1,0 +1,20 @@
+PROGRAM Prog4
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIC  [1,0] (*start*) (**)  
+ BST  FB  [2,0] (*MSG_MODBUS*) (*MSG_MODBUS_1*) ( (*IN:IN*)(**) (**)  , (*Cancel:Canc*)(*Cancel*) (**)  , (*LocalCfg:Loca*)(*LocalCfg*) (**)  , (*TargetCfg:Targ*)(*TargetCfg*) (**)  , (*LocalAddr:Loca*)(*LocalAddr*) (**)  , (*__ADI_LocalAddr:_ADI*)(*0*) (**) ; (*Q:Q*)(**) (**)  , (*Error:Err*)(**) (**)  , (*ErrorID:ErID*)(**) (**) )
+   NXB  
+ BST  FB  [2,6] (*MSG_MODBUS*) (*MSG_MODBUS_2*) ( (*IN:IN*)(**) (**)  , (*Cancel:Canc*)(*Cancel*) (**)  , (*LocalCfg:Loca*)(*LocalCfg2*) (**)  , (*TargetCfg:Targ*)(*TargetCfg2*) (**)  , (*LocalAddr:Loca*)(*LocalAddr2*) (**)  , (*__ADI_LocalAddr:_ADI*)(*0*) (**) ; (*Q:Q*)(**) (**)  , (*Error:Err*)(**) (**)  , (*ErrorID:ErID*)(**) (**) )
+   NXB  FB  [2,12] (*MSG_MODBUS*) (*MSG_MODBUS_5*) ( (*IN:IN*)(**) (**)  , (*Cancel:Canc*)(*Cancel*) (**)  , (*LocalCfg:Loca*)(*LocalCfg3*) (**)  , (*TargetCfg:Targ*)(*TargetCfg3*) (**)  , (*LocalAddr:Loca*)(*LocalAddr3*) (**)  , (*__ADI_LocalAddr:_ADI*)(*0*) (**) ; (*Q:Q*)(**) (**)  , (*Error:Err*)(**) (**)  , (*ErrorID:ErID*)(**) (**) )
+ BND
+
+ BND
+
+EOR [5,0]
+EOF
+#end_info
+END_PROGRAM

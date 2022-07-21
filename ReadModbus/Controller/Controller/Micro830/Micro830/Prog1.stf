@@ -1,0 +1,12 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIC  [1,0] (*start*) (**)  FB  [2,0] (*MSG_MODBUS*) (*MSG_MODBUS_1*) ( (*IN:*)(**) (**)  , (*Cancel:*)(*Cancel*) (**)  , (*LocalCfg:*)(*LocalCfg*) (**)  , (*TargetCfg:*)(*TargetCfg*) (**)  , (*LocalAddr:*)(*LocalAddr*) (**)  , (*__ADI_LocalAddr:*)(*0*) (**) ; (*Q:*)(**) (**)  , (*Error:*)(**) (**)  , (*ErrorID:*)(**) (**) )
+EOR [5,0]
+EOF
+#end_info
+END_PROGRAM
